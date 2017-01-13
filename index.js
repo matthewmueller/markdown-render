@@ -4,6 +4,7 @@
 
 var highlight = require('highlight.js')
 var Remarkable = require('remarkable')
+var toc = require('markdown-toc')
 
 /**
  * Export render
@@ -50,6 +51,16 @@ var md = new Remarkable({
     } catch (e) {}
 
     return ''
+  }
+})
+
+/**
+ * Add in header anchors
+ */
+
+md.use(function (remarkable) {
+  remarkable.renderer.rules.heading_open = function (tokens, idx) {
+    return '<h' + tokens[idx].hLevel + ' id=' + toc.slugify(tokens[idx + 1].content) + '>'
   }
 })
 

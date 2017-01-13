@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "highlight.js": "^9.9.0",
+    "markdown-toc": "^1.0.3",
     "remarkable": "^1.7.1"
   }
 }
