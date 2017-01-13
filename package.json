@@ -1,6 +1,6 @@
 {
   "name": "markdown-render",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple markdown renderer with syntax highlighting",
   "main": "index.js",
   "scripts": {
