@@ -1,0 +1,22 @@
+{
+  "name": "markdown-render",
+  "version": "1.0.0",
+  "description": "simple markdown renderer with syntax highlighting",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "markdown",
+    "render",
+    "simple",
+    "syntax",
+    "highlighting"
+  ],
+  "author": "Matthew Mueller",
+  "license": "MIT",
+  "dependencies": {
+    "highlight.js": "^9.9.0",
+    "remarkable": "^1.7.1"
+  }
+}
